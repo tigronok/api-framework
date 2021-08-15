@@ -17,25 +17,13 @@ describe('Поиск и удаление случайного кота', async (
     //  responseRemove.status === status,
     //  `Актуальный статус код при удалении ${responseRemove.status}, ожидался ${status}`
     // );
-    /*{
-      if (axios.isAxiosError(error)) {
-        response = error.response;
-      } else {
-        console.error(error);
-      }
-    }*/
+
    // const responseSearch = await CoreApi.getCatById(randomCatId);
-    CoreApi.getCatById(randomCatId).catch(error=>{
-      console.log(`wwww`);
-    });
-    /*try{
-      console.log(`qqqqq`);
+    try{
       const responseSearch = await CoreApi.getCatById(randomCatId);
-      console.log(`hmmm`);
     } catch (error){
-      console.log(`hmmm22`);
       console.log(error.response.status);
-    }*/
+    }
    /* const searchStatus: number = 404;
     assert.ok(
       responseSearch.status === searchStatus,
